@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website | TMDb API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/asset/logo.jpg" alt="Movie Website Logo">
+        </div>
+        <nav>
+            <a href="index.html"><h2>Movie Website TMDb API</h2></a>
+            <div class="filters">
+                <div class="filter-item">
+                    <h2>Year:</h2>
+                    
+                    <select id="years">
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <h2>Genre:</h2>
+                    <select id="genres">
+                        <option value="">All</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <div id="movieDetailsModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="movieDetailsContent"></div>
+            </div>
+        </div>
+
+
+    <main>
+        <div class="content" id="content"></div>
+        <button id="loadMoreBtn">Load More</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Movie Website. All rights reserved.</p>
+        <p>Powered by <a href="https://www.themoviedb.org/">TMDb API</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
